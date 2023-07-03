@@ -1,10 +1,18 @@
 package com.in28minutes.springboot.learnjpaandhibernate.course.jdbc.course;
 
-public class Course {
-	private long id;
-	private String name;
-	private String author;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
+public class Course {
+	
+	@Id
+	private long id;
+	
+	private String name;
+	
+	private String author;
+ 
 	public Course() {
 
 	}
